@@ -1,0 +1,329 @@
+/** global */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body, p, td, a {
+  font-family: 'Cutive', serif;
+  line-height: 2em;
+  font-size: 10pt;
+  color: #000;
+}
+
+a img {
+  border: 0;
+}
+
+a, a:active, a:focus { 
+  outline: none; 
+}
+
+a {
+  color: #EE7F38;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FCAB55;
+  text-decoration: underline;
+}
+
+/** shared */
+
+.smaller,
+.smaller a {
+  font-size: 7pt;
+  font-family: 'Cutive', serif;
+  font-style: italic;
+}
+
+.centered {
+  text-align: center;
+}
+
+.txtr {
+  text-align: right;
+}
+
+.txtl {
+  text-align: left;
+}
+
+/** main navigation */
+
+div#nav {
+  background-image: url('../images/wire.gif');
+  background-repeat: repeat-x;
+  background-position: 50% 116px;
+  width: 100%;
+  height: 170px;
+  margin-top: -85px;
+  top: 50%;
+  position: absolute;
+}
+
+div#nav > div {
+  margin: 0 auto;
+  width: 750px;
+  border: 0px solid red;
+}
+
+img.profilepic + p,
+section > div p:first-child {
+  margin-top: 0;
+}
+
+ul.birds {
+  padding-top: 20px;
+  margin-left: 15px;
+}
+
+ul.birds li {
+  float: left;
+}
+
+ul.birds li:last-child {
+  padding-top: 10px;
+}
+
+a.bird {
+  display: block;
+  height: 150px;
+  position: relative;
+}
+
+a.bird:hover {
+  background-position: 0 -150px;
+  text-decoration: none;
+}
+
+a.bird span {
+  display: none;
+  position: absolute;
+  top: 105px;
+  font-family: 'Cutive', serif;
+  font-size: 8pt;
+  color: #999;
+}
+
+a.bird:hover span {
+  color: #000;
+}
+
+/** Individual link targets */
+
+a.social,
+a.resume {
+  background-image: url('../images/left.png');
+}
+
+a.works,
+a.about {
+  background-image: url('../images/right.png');
+}
+
+/** fb/twt */
+
+a.social {
+  width: 62px;
+}
+
+a.social span {
+  left: -1.5em;
+}
+
+/** resume */
+
+a.resume {
+  width: 125px;
+  background-position: -76px 0;
+}
+
+a.resume:hover {
+  background-position: -76px -150px;
+}
+
+a.resume span {
+  left: 3em;   
+}
+
+/** works */
+
+a.works {
+  margin-left: 140px;
+  width: 52px;
+}
+
+a.works span {
+  left: -3.5em;
+}
+
+/** about */
+
+a.about {
+  margin-left: 12px;
+  width: 50px;
+  background-position: -78px 0;
+}
+
+a.about:hover {
+  background-position: -78px -150px;
+}
+
+a.about span {
+  left: 3.5em;
+}
+
+/** name link */
+
+a.home {
+  font-family: 'Cutive', serif;
+  font-size: 32pt;
+  margin-left: 50px;
+  padding: 15px;
+  color: #000;
+}
+
+a.home:hover {
+  color: #666;
+  text-decoration: none;
+}
+
+/** Sections */
+
+section {
+  display: none; /* JS to unhide */
+}
+
+section > div {
+  width: 720px;
+  margin: 220px auto 40px;
+  padding: 10px;
+  border: 0px dashed #333;
+}
+
+/** Footer */
+
+footer > div {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  text-align: right;
+}
+
+footer > div a {
+  font-size: 7pt;
+  font-family: 'Cutive', serif;
+  color: #999;
+}
+
+/** about section */
+
+img.profilepic {
+  margin: 0 0 15px 20px;
+  float: right;
+  border-radius: 10px;
+}
+
+/** social section */
+
+table.social-link {
+  margin: 0 auto;
+}
+
+table.social-link td img {
+  display: block;
+  margin: 0 auto;
+}
+
+table.social-link td {
+  width: 200px;
+  padding: 0 20px 25px;
+  text-align: center;
+  vertical-align: top;
+}
+
+a img.dryicon {
+  opacity: 0.8;
+}
+a:hover img.dryicon {
+  opacity: 1;
+}
+
+/** resume section */
+
+img.linkedin {
+  padding-bottom: 35px;
+}
+
+/** works section: icons */
+
+a.youtube img.art-icon {
+  display: block;
+  margin: 2px auto 10px;
+}
+
+img.art-icon {
+  border-radius: 8px;
+  margin: 2px;
+  opacity: 1;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  display: inline;
+}
+
+a:hover img.art-icon {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/** each set in works */
+
+.td h2 {
+  display: block;
+  font-size: 12pt;
+  font-weight: normal;
+  margin: 8px;
+  text-align: center;
+}
+
+.set a {
+  outline: none !important;
+}
+.set {
+  padding: 10px;
+}
+
+.set:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.table {
+  display: table;
+}
+
+.tr {
+  display: table-row;
+}
+
+.td,
+.th {
+  display: table-cell;
+  width: 170px;
+  vertical-align: top;
+}
+
+.td.wide {
+  width: 270px;
+  border: 0px solid red;
+}
+
+.th {
+  font-size: 16px;
+  text-align: center;
+  vertical-align: bottom;
+  padding-bottom: 10px;
+}
