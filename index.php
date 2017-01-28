@@ -8,6 +8,7 @@ dsadasda
         $regex_head = '/[\n\r]/';
         if (empty($nom) || empty($expediteur) || empty($message)){
             echo "<script>alert('All fields must be filled')</script>";
+           echo "|,cks"
         }
         elseif (!preg_match($regex_mail, $expediteur)){
             echo "<script>alert('The address is not valid..')</script>";
