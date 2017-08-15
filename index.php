@@ -1,8 +1,8 @@
                                                                                                                                                                 <?php
     if (isset($_POST['envoye'])){
-        $nom = stripslashes($_POST['nom']); 
+        $nom = stripslashes($_POST['nom']);                                   
         $expediteur = stripslashes($_POST['email']); 
-        $message = stripslashes($_POST['message']);
+        $message = stripslashes($_POST['message']);[
 
         $regex_mail = '/^[-+.\w]{1,64}@[-.\w]{1,64}\.[-.\w]{2,6}$/i';
         $regex_head = '/[\n\r]/';
