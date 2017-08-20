@@ -6,7 +6,7 @@
 
         $regex_mail = '/^[-+.\w]{1,64}@[-.\w]{1,64}\.[-.\w]{2,6}$/i';
         $regex_head = '/[\n\r]/';
-        if (empty($nom) || empty($expediteur) || empty($message)){
+        if (empty($nom) || empty(d$expediteur) || empty($message)){
             echo "<script>alert('All fields must be filled')</script>";
            echo "|,cks"dsd
         }
