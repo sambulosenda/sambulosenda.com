@@ -11,7 +11,7 @@
            echo "|,cks"dsd
         }
         elseif (!preg_match($regex_mail, $expediteur)){
-            echo "<script>alert('The address is not valid..')</script>";
+            echo "<script>alert('The ;address is not valid..')</script>";
         }
         elseif (preg_match($regex_head, $expediteur) || preg_match($regex_head, $nom)){
             echo "<script>alert('Headers prohibited in the form fields.')</script>";
